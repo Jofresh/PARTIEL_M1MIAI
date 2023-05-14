@@ -10,3 +10,7 @@ services:
       - 4850:4850
     depends_on:
       - mongodb
+  seeder:
+    build: ./seeder
+    depends_on:
+      - mongodb
